@@ -11,6 +11,8 @@ def main(time,option):
     for t in time:
         if len(dot) < 3:
             dot += '.'
+        elif len(dot) > 2:
+            dot = '.'
         os.system('cls')
         if 3600%t == 0:
             if option == 'h':
